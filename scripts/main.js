@@ -24,7 +24,6 @@ function onWindowResize() {
 function init() {
 
       scene = new THREE.Scene();
-
       camera = new THREE.PerspectiveCamera(60,window.innerWidth / window.innerHeight, 1, 1000);
       camera.position.z = 1;
       camera.rotation.x = Math.PI/2;
@@ -60,12 +59,3 @@ function init() {
     }
     
     window.addEventListener("load", init, false);
-  //TODO : finir le toggle switch.
-    function listAttributes() {
-        const element = document.getElementById("toggle");
-        const attributes = element.attributes;
-        
-        for (let i = 0; i < attributes.length; i++) {
-            console.log(attributes[i].name + ": " + attributes[i].value);
-        }
-    }
