@@ -5,13 +5,17 @@
 body {
   width: 100vw;
   height: 100vh;
-  margin: 0;
-  background: black;
-  overflow: hidden;
+  margin: 1vw;
   display: flex;
   justify-content: center;
   align-items: center;
+  
+  background: black;
+  overflow: hidden;
+  
+
 }
+
 .overlay {
   position: fixed;
   top: 0;

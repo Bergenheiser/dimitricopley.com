@@ -1,4 +1,4 @@
-const passwordField = document.getElementById("password")
+const passwordField = document.getElementById("about");
 
 const handleMouseMove = event => {
     if (!document.querySelector("#password:is(:focus)") && !document.querySelector("#password:is(:user-invalid)")) {
