@@ -30,7 +30,7 @@ function init() {
 
       renderer = new THREE.WebGLRenderer();
       renderer.setSize(window.innerWidth, window.innerHeight);
-      document.body.appendChild(renderer.domElement);
+      document.querySelector("main").appendChild(renderer.domElement);
       starGeo = new THREE.Geometry();
       for(let i=0;i<6000;i++) {
         star = new THREE.Vector3(
@@ -57,5 +57,38 @@ function init() {
 
       animate(); 
     }
+
+    const handleMouseMove = event => {
     
-    window.addEventListener("load", init, false);
+          const eyes = document.getElementsByClassName('eye')
+    
+          for (let eye of eyes) {
+                 const x = eye.getBoundingClientRect().left + 10;
+                 const y = eye.getBoundingClientRect().top + 10;
+                 const rad = Math.atan2(event.pageX - x, event.pageY - y);
+                 const rot = (rad * (180 / Math.PI) * -1) + 180;
+          
+                 eye.style.transform = `rotate(${rot}deg)`;
+              }
+      }
+  
+    async function handleLangChange() {
+      switch (this.checked) {
+        case true:
+          Array.from(document.getElementsByClassName("eng")).forEach(elem => elem.classList.add("hidden"));
+          Array.from(document.getElementsByClassName("fr")).forEach(elem => elem.classList.remove("hidden"));
+          break;
+
+        case false:
+          Array.from(document.getElementsByClassName("fr")).forEach(elem => elem.classList.add("hidden"));
+          Array.from(document.getElementsByClassName("eng")).forEach(elem => elem.classList.remove("hidden"));
+          break;
+      }
+    }
+      window.addEventListener("load", init, false);
+
+      document.addEventListener("DOMContentLoaded",function(){
+      handleLangChange();
+      document.addEventListener("mousemove", event => handleMouseMove(event));
+       let langToggle = document.getElementById("langToggle");
+       langToggle.addEventListener("change", handleLangChange);});

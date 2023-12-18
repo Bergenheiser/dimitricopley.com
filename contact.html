@@ -7,10 +7,12 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="styles/ball.css" />
+    <script src="scripts/three.min.js" async></script>
     <script src="scripts/main.js"></script>
+    <script src="scripts/login.js" async></script>
   </head>
-  <body class="w-full h-full flex flex-col space-y-10">
-    <nav class="bg-black fixed w-full">
+  <body class="w-full h-full">
+    <nav class="bg-black fixed w-full overlay">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex items-center justify-between h-16">
           <div class="flex items-center">
@@ -50,6 +52,7 @@
                 type="checkbox"
                 value=""
                 class="sr-only peer"
+                checked
               />
               <div
                 class="w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"
@@ -69,30 +72,5 @@
         </div>
       </div>
     </nav>
-
-    <main class="">
-      <div class="text-box">
-        <div class="heading">To infinity and Beyond</div>
-        <div class="button-wrapper">
-          <div class="button">Learn More</div>
-          <div class="button">Contact Us</div>
-        </div>
-      </div>
-      <script src="scripts/three.min.js" async></script>
-      <section class="form__animation">
-        <div id="ball">
-          <div class="ball">
-            <div id="face">
-              <div class="ball__eyes">
-                <div class="eye_wrap"><span class="eye"></span></div>
-                <div class="eye_wrap"><span class="eye"></span></div>
-              </div>
-              <div class="ball__mouth"></div>
-            </div>
-          </div>
-        </div>
-        <div class="ball__shadow"></div>
-      </section>
-    </main>
   </body>
 </html>

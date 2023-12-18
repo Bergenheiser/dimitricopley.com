@@ -4,13 +4,6 @@
   box-sizing: border-box;
 }
 
-main {
-  height: auto;
-  width: 100%;
-  display: flex;
-  z-index: 1;
-  flex-direction: column;
-}
 
 section {
   display: flex;
@@ -36,88 +29,88 @@ position: absolute;
 }
 
 .ball {
-  width: 250px;
-  height: 250px;
+  width: 220px;
+  height: 220px;
   padding: 1px;
   border-radius: 100%;
   background: #2463ea;
-  animation: bounce 3s ease-out forwards;
+  animation: bounce 3.5s ease-out forwards;
   transform: translateY(calc(-50vh - 116px));
 }
 
 @keyframes bounce {
   5% {
-    height: 300px;
-    width: 300px;
+    height: 240px;
+    width: 240px;
   }
   10% {
-    height: 300px;
-    width: 280px;
+    height: 240px;
+    width: 240px;
   }
   15% {
-    height: 280px;
-    width: 320px;
+    height: 240px;
+    width: 240px;
     transform: translateY(0);
   }
   20%{
-    height: 300px;
-    width: 320px;
+    height: 240px;
+    width: 240px;
   }
   25% {
      transform: translateY(-200px);
   }
   30% {
-    height: 300px;
-    width: 300px;
+    height: 240px;
+    width: 240px;
   }
   35% {
-    height: 300px;
-    width: 280px;
+    height: 240px;
+    width: 240px;
   }
   40% {
-    height: 280px;
-    width: 320px;
+    height: 240px;
+    width: 240px;
     transform: translateY(0);
   }
   45%{
-    height: 300px;
-    width: 320px;
+    height: 200px;
+    width: 220px;
   }
   50% {
      transform: translateY(-160);
   }
   55% {
-    height: 300px;
-    width: 300px;
+    height: 200px;
+    width: 200px;
   }
   60% {
-    height: 300px;
-    width: 280px;
+    height: 210px;
+    width: 210px;
   }
   65% {
-    height: 280px;
-    width: 320px;
+    height: 200px;
+    width: 200px;
     transform: translateY(0);
   }
   70%{
-    height: 300px;
-    width: 320px;
+    height: 220px;
+    width: 220px;
   }
   75% {
      transform: translateY(-60px);
   }
   80% {
-    height: 300px;
-    width: 280px;
+    height: 240px;
+    width: 240px;
   }
   85% {
-    height: 280px;
-    width: 320px;
+    height: 240px;
+    width: 240px;
     transform: translateY(-20px);
   }
   90%{
-    height: 300px;
-    width: 320px;
+    height: 200px;
+    width: 200px;
   }
   100% {
      transform: translateY(0);
