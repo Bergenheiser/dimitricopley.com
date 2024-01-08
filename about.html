@@ -1,74 +1,27 @@
-<!DOCTYPE html>
-<html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mon CV</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="styles/style.css" />
-    <link rel="stylesheet" href="styles/ball.css" />
-    <script src="scripts/main.js"></script>
-  </head>
-  <body class="w-full h-full">
-    <nav class="bg-black fixed w-full overlay">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex items-center justify-between h-16">
-          <div class="flex items-center">
-            <div class="hidden md:block">
-              <div class="ml-10 flex items-baseline space-x-4">
-                <a
-                  href="./index.html"
-                  class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                >
-                  <p class="eng">Home</p>
-                  <p class="fr hidden">Acceuil</p>
-                </a>
-                <a
-                  id="about"
-                  href="./about.html"
-                  class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                  ><p class="eng">About</p>
-                  <p class="fr hidden">A propos</p>
-                </a>
-                <a
-                  href="./xp.html"
-                  class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                  >Experience</a
-                >
-                <a
-                  href="./contact.html"
-                  class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                  >Contact</a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="flex items-center">
-            <label class="relative inline-flex items-center cursor-pointer">
-              <input
-                id="langToggle"
-                type="checkbox"
-                value=""
-                class="sr-only peer"
-                checked
-              />
-              <div
-                class="w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"
-              ></div>
-              <div>
-                <span
-                  class="ms-4 text-sm font-medium text-gray-900 dark:text-gray-300 hidden fr"
-                  >Français</span
-                >
-                <span
-                  class="ms-4 text-sm font-medium text-gray-900 dark:text-gray-300 eng"
-                  >English</span
-                >
-              </div>
-            </label>
-          </div>
-        </div>
-      </div>
-    </nav>
-  </body>
-</html>
+<div id="about">
+  <div class="circle">
+    <div clas="title"></div>
+    <div class="about">
+      <p class="name">Dimitri</p>
+      <p class="content eng hidden">
+        As a highly motivated and detail-oriented software engineering student,
+        I have developed a strong foundation in object-oriented and functional
+        programming languages. My passion for technology and drive to specialize
+        in systems and information security has led me to excel in designing and
+        developing small-scale applications. I am a dedicated, curious and
+        creative individual who is committed to staying current with industry
+        trends and expanding my knowledge in the field.
+      </p>
+      <p class="content fr">
+        En tant qu'étudiant en génie logiciel hautement motivé et soucieux du
+        détail, j'ai acquis une solide base en langages de programmation
+        orientés objet et fonctionnels. Ma passion pour la technologie et mon
+        désir de me spécialiser dans les systèmes et la sécurité de
+        l'information m'ont permis d'exceller dans la conception et le
+        développement d'applications à petite échelle. Je suis une personne
+        dévouée, curieuse et créative, engagée à rester à jour avec les
+        tendances de l'industrie et à élargir mes connaissances dans le domaine.
+      </p>
+    </div>
+  </div>
+</div>

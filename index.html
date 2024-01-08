@@ -5,9 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mon CV</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="styles/style.css" />
-    <link rel="stylesheet" href="styles/ball.css" />
-    <script src="scripts/main.js"></script>
+    <link rel="stylesheet" type=text/css href="styles/styles.css"/>
+    <script src="scripts/main.js" async></script>
   </head>
   <body class="w-full h-full flex flex-col space-y-10">
     <nav class="bg-black fixed w-full">
@@ -17,29 +16,27 @@
             <div class="hidden md:block">
               <div class="ml-10 flex items-baseline space-x-4">
                 <a
-                  href="./index.html"
-                  class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                >
-                  <p class="eng">Home</p>
-                  <p class="fr hidden">Acceuil</p>
-                </a>
-                <a
                   id="about"
-                  href="./about.html"
+                  data-file="./about.html"
                   class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                  ><p class="eng">About</p>
-                  <p class="fr hidden">A propos</p>
+                >
+                  <p class="eng hidden">About</p>
+                  <p class="fr">A propos</p>
                 </a>
                 <a
-                  href="./xp.html"
+                  id="xp"
+                  data-file="./xp.html"
                   class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                  >Experience</a
                 >
+                  Experience
+                </a>
                 <a
-                  href="./contact.html"
+                  id="contact"
+                  data-file="./contact.html"
                   class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                  >Contact</a
                 >
+                  Contact
+                </a>
               </div>
             </div>
           </div>
@@ -55,44 +52,21 @@
                 class="w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"
               ></div>
               <div>
-                <span
-                  class="ms-4 text-sm font-medium text-gray-900 dark:text-gray-300 hidden fr"
-                  >Français</span
-                >
-                <span
-                  class="ms-4 text-sm font-medium text-gray-900 dark:text-gray-300 eng"
-                  >English</span
+                <a
+                  class="ms-4 text-sm font-medium text-gray-900 dark:text-gray-300"
+                  >English</a
                 >
               </div>
             </label>
           </div>
         </div>
       </div>
+    
     </nav>
 
-    <main class="">
-      <div class="text-box">
-        <div class="heading">To infinity and Beyond</div>
-        <div class="button-wrapper">
-          <div class="button">Learn More</div>
-          <div class="button">Contact Us</div>
-        </div>
-      </div>
-      <script src="scripts/three.min.js" async></script>
-      <section class="form__animation">
-        <div id="ball">
-          <div class="ball">
-            <div id="face">
-              <div class="ball__eyes">
-                <div class="eye_wrap"><span class="eye"></span></div>
-                <div class="eye_wrap"><span class="eye"></span></div>
-              </div>
-              <div class="ball__mouth"></div>
-            </div>
-          </div>
-        </div>
-        <div class="ball__shadow"></div>
-      </section>
+    <main class="flex-grow flex items-center justify-center mt-10"></main>
+    <!-- mettre le code de la page d'acceuil ici-->
+      <div></div>
     </main>
   </body>
 </html>

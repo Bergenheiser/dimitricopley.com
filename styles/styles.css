@@ -1,75 +1,71 @@
 @font-face {
-  font-family: 'space_punk';
-  src: url('fonts/space-punk.italic.ttf') format('truetype');
+  font-family: "space_punk";
+  src: url("fonts/space-punk.italic.ttf") format("truetype");
+  /* Add the OTF font format */
 }
-body {
-  width: 100vw;
-  height: 100vh;
-  margin: 0;
-  background: black;
-  overflow: hidden;
+@font-face {
+  font-family: Monument;
+  src: url("fonts/MonumentExtended-Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: DM Sans;
+  src: url("fonts/DMSans-Regular.ttf") format("truetype");
+}
+
+html {
+  background: #f5f5f5;
+}
+.circle {
+  width: 75.875rem;
+  height: 75.875rem;
+  border-radius: 75.875rem;
+  background: var(--Color-2, #fff);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 10vh;
 }
-canvas {
-  position: absolute;
-  top:0;
-  left:0;
-  z-index: -1;
-}
-.text-box {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  font-size: 60px;
-  font-family: 'Raleway', sans-serif;
-  letter-spacing: 7px;
-  word-spacing: 12px;
+
+.title {
+  width: 65rem;
+  color: var(--Color-1, #000);
+  font-family: "Monument Extended";
+  font-size: 7.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 90%;
   text-transform: uppercase;
-  color:rgb(238, 238, 238);
-}
-.button-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  flex-direction: row;
-}
-.button {
-  display: inline-block;
-  font-size: 16px;
-  font-weight: bold;
-  padding: 15px;
-  margin-left:20px;
-  margin-right:20px;
-  word-spacing: normal;
-  letter-spacing: 5px;
-  border: 1px solid white;
-  background: black;
-  cursor: pointer;
 }
 
-.overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  z-index: 2;
+.name {
+  color: var(--Color-1, #000);
+  font-family: "Monument Extended";
+  font-size: 11.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 90%; /* 10.125rem */
+  text-transform: uppercase;
 }
-
-main{
-  position: relative;
-  z-index: 3;
+a {
+  font-family: Monument Extended;
+}
+.about {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 58.5rem;
+  margin-top: 22vh;
+  padding: 0rem 2.375rem 0.6875rem 2.375rem;
   flex-direction: column;
-  padding: 20px;
-  width: 100%;
-  height: 60%;
-  overflow: hidden;
+  align-items: flex-start;
+  gap: 0.9375rem;
+}
 
+.content {
+  width: 36.5625rem;
+  color: var(--Color-1, #000);
+  font-family: DM Sans;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 1.4rem */
 }
