@@ -19,10 +19,14 @@ async function handleLangChange() {
       break;
   }
 }
+/* Ayant voulu experimenter avec le routage des liens par insertion de contenu 
+(à l'inverse d'une redirection) parceque "la bande passante c'est du charbon!" [N. VIEVILLE - 2023]
+le code suivant fait donc ce qu'un onclick en html aurait très bien pu faire, 
+mais pourquoi faire simple quand on peux faire compli... javascript?*/
+
 document.querySelectorAll("nav a").forEach((link) => {
   link.addEventListener("click", function (event) {
     event.preventDefault();
-
     fetch(this.dataset.file)
       .then((response) => response.text())
       .then((data) => {
@@ -31,19 +35,15 @@ document.querySelectorAll("nav a").forEach((link) => {
       .catch((error) => console.error(error));
   });
 });
+let arrow = document.getElementById("arrow");
+arrow.addEventListener("click", function (event) {
+  event.preventDefault();
+  fetch(this.dataset.file)
+    .then((response) => response.text())
+    .then((data) => {
+      document.querySelector("main").innerHTML = data;
+    })
+    .catch((error) => console.error(error));
+});
 let langToggle = document.getElementById("langToggle");
 langToggle.addEventListener("change", handleLangChange);
-
-function rotateCircleOnScroll() {
-  const circle = document.querySelector(".circle");
-  const scrollPosition = window.scrollY;
-
-  // Calculate the rotation angle based on the scroll position
-  const rotationAngle = scrollPosition * 0.5;
-
-  // Apply the rotation using CSS transform property
-  circle.style.transform = `rotate(${rotationAngle}deg)`;
-}
-
-// Attach the method to the scroll event
-window.addEventListener("scroll", rotateCircleOnScroll);

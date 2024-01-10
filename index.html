@@ -8,8 +8,8 @@
     <link rel="stylesheet" type=text/css href="styles/styles.css"/>
     <script src="scripts/main.js" async></script>
   </head>
-  <body class="w-full h-full flex flex-col space-y-10">
-    <nav class="bg-black fixed w-full">
+  <body class="w-full h-full flex fixed flex-col gap-2">
+    <nav class="bg-black w-full">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex items-center justify-between h-16">
           <div class="flex items-center">
@@ -61,12 +61,20 @@
           </div>
         </div>
       </div>
-    
     </nav>
 
-    <main class="flex-grow flex items-center justify-center mt-10"></main>
-    <!-- mettre le code de la page d'acceuil ici-->
-      <div></div>
+    <main class="flex-grow flex items-center justify-center">
+      <div id="welcome_header">
+        <div id="my_name">Dimitri Copley © 2024</div>
+        <div class="separator"></div>
+        <div id="main_title">
+          <p class="eng hidden">Engineering and computational art</p>
+          <p class="fr">Ingénierie des Systemes Images et Son</p>
+        </div>
+        <a id="arrow" data-file="./about.html">
+          <img id="arrow" src="images\icon.png" />
+        </a>
+      </div>
     </main>
   </body>
 </html>
