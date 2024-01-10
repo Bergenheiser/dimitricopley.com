@@ -1,3 +1,5 @@
+/*Toggle switch logic*/
+
 async function handleLangChange() {
   switch (this.checked) {
     case false:
@@ -19,6 +21,15 @@ async function handleLangChange() {
       break;
   }
 }
+function uncheckToggleSwitch() {
+  let langToggle = document.getElementById("langToggle");
+  langToggle.checked = false;
+}
+
+let langToggle = document.getElementById("langToggle");
+langToggle.addEventListener("change", handleLangChange);
+window.addEventListener("load", uncheckToggleSwitch);
+
 /* Ayant voulu experimenter avec le routage des liens par insertion de contenu 
 (à l'inverse d'une redirection) parceque "la bande passante c'est du charbon!" [N. VIEVILLE - 2023]
 le code suivant fait donc ce qu'un onclick en html aurait très bien pu faire, 
@@ -45,5 +56,3 @@ arrow.addEventListener("click", function (event) {
     })
     .catch((error) => console.error(error));
 });
-let langToggle = document.getElementById("langToggle");
-langToggle.addEventListener("change", handleLangChange);
