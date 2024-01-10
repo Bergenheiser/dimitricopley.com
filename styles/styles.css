@@ -48,7 +48,7 @@ html {
   text-transform: uppercase;
 }
 a {
-  font-family: Monument Extended;
+  font-family: "Monument Extended";
 }
 .about {
   display: flex;
