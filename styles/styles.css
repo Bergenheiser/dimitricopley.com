@@ -55,6 +55,7 @@ text-transform: uppercase;
 
 
 /* About.html*/
+
 .title {
   width: 65rem;
   color: var(--Color-1, #000);
@@ -74,19 +75,7 @@ text-transform: uppercase;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
-  z-index: 1;
   background-color: #000;
-}
-
-#bg_about {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    object-fit: cover;
-    height: 100%;
-    fill: #000;
 }
 .name {
   color: var(--Color-1, #fff);
@@ -114,4 +103,23 @@ text-transform: uppercase;
   font-style: normal;
   font-weight: 400;
   line-height: 140%; /* 1.4rem */
+}
+
+/* xp.html*/
+.xp{display: flex;
+flex-direction: row;
+}
+.frame{
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 10px;
+}
+
+
+.number{
+  font-family: "Monument Extended";
+  font-size: 8rem;
+  transform: rotate(-90deg);
+
 }
