@@ -83,6 +83,7 @@ a {
   align-items: center;
   background-color: #000;
   overflow: hidden;
+  gap: 6vh;
 }
 .name {
   font-family: "Monument Extended";
@@ -111,10 +112,30 @@ a {
 }
 
 .contact_me {
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  gap: 20vh;
+  justify-content: center;
+  align-items: center;
+  gap: 2vh;
+  margin-left: 40%;
+}
+.contact_me .text {
+  color: var(--Color-1, #fff);
+  font-family: Monument Extended;
+  font-size: 2rem;
+  font-style: normal;
+}
+.logo_container {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  gap: 5vh;
+}
+
+.logo_container a {
+  width: 20%;
+  height: auto;
 }
 
 /* xp.html*/
