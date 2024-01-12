@@ -35,17 +35,21 @@ window.addEventListener("load", uncheckToggleSwitch);
 le code suivant fait donc ce qu'un onclick en html aurait très bien pu faire, 
 mais pourquoi faire simple quand on peux faire compli... javascript?*/
 
-document.querySelectorAll("nav a").forEach((link) => {
-  link.addEventListener("click", function (event) {
-    event.preventDefault();
-    fetch(this.dataset.file)
-      .then((response) => response.text())
-      .then((data) => {
-        document.querySelector("main").innerHTML = data;
-      })
-      .catch((error) => console.error(error));
-  });
+document.querySelectorAll("nav a").forEach((link, index) => {
+  if (index < 2) {
+    //Oui tout a fait, je me suis mis dans un sacré bourbier (mais c'est joli sinon?)
+    link.addEventListener("click", function (event) {
+      event.preventDefault();
+      fetch(this.dataset.file)
+        .then((response) => response.text())
+        .then((data) => {
+          document.querySelector("main").innerHTML = data;
+        })
+        .catch((error) => console.error(error));
+    });
+  }
 });
+
 let arrow = document.getElementById("arrow");
 arrow.addEventListener("click", function (event) {
   event.preventDefault();
