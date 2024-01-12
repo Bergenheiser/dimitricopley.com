@@ -60,3 +60,35 @@ arrow.addEventListener("click", function (event) {
     })
     .catch((error) => console.error(error));
 });
+
+/*Allocation dynamique du contenu d'experience professionnelle*/
+
+function createJobCardHTML(job) {
+  return `
+    <div class="frame">
+      <div class="left_frame">
+        <div class="number">${job.number}/</div>
+        <div class="key_words">
+         <div class=job_title> ${job.job}</div>
+         <div> ${job.period}</div>
+        </div>
+      </div>
+      <div class="right_frame">
+        <div class="job"><p>${job.description}</p></div>
+      </div>
+    </div>
+    <div class="separator"></div>
+  `;
+}
+
+let xpButton = document
+  .getElementById("xp")
+  .addEventListener("click", function (event) {
+    fetch("./pages/data.json")
+      .then((response) => response.json())
+      .then((data) => {
+        const jobCardHTML = data.map(createJobCardHTML).join("");
+        document.querySelector("content").innerHTML += jobCardHTML;
+      })
+      .catch((error) => console.error("Error:", error));
+  });

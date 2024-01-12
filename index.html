@@ -8,8 +8,8 @@
     <link rel="stylesheet" type=text/css href="styles/styles.css"/>
     <script src="scripts/main.js" async></script>
   </head>
-  <body class="w-full h-full flex fixed flex-col gap-5">
-    <nav class="bg-black w-full">
+  <body class="w-full h-full flex flex-col gap-5">
+    <nav class="bg-black fixed top-0 w-full">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex items-center justify-between h-16">
           <div class="flex items-center">
@@ -17,7 +17,7 @@
               <div class="ml-10 flex items-baseline space-x-4 gap-2">
                 <a
                   id="about"
-                  data-file="./about.html"
+                  data-file="./pages/about.html"
                   class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                 >
                   <p class="eng hidden">About</p>
@@ -25,7 +25,7 @@
                 </a>
                 <a
                   id="xp"
-                  data-file="./xp.html"
+                  data-file="./pages/xp.html"
                   class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                 >
                   Experience
@@ -63,8 +63,8 @@
       </div>
     </nav>
 
-    <main class="w-full mt-10 h-full">
-      <div class="flex-grow flex items-center justify-center">
+    <main class="mt-20 w-full">
+      <div class="mt-10 flex items-center justify-center">
         <div id="welcome_header">
           <div id="my_name">Dimitri Copley © 2024</div>
           <div class="separator"></div>
@@ -72,7 +72,7 @@
             <p class="eng hidden">Engineering and computational art</p>
             <p class="fr">Ingénierie des Systemes Images et Son</p>
           </div>
-          <a id="arrow" data-file="./about.html">
+          <a id="arrow" data-file="./pages/about.html">
             <img id="arrow" src="images\icon.png" />
           </a>
         </div>

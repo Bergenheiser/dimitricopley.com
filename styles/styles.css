@@ -72,17 +72,16 @@ a {
   text-transform: uppercase;
 }
 .circle {
-  width: 75.875rem;
-  height: 75.875rem;
-  border-radius: 75.875rem;
-  background: var(--Color-2, #fff);
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #000;
   overflow: hidden;
+  width: 75.875rem;
+  height: 75.875rem;
+  border-radius: 75.875rem;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   gap: 6vh;
 }
 .name {
@@ -144,38 +143,68 @@ a {
   flex-direction: column;
   flex-grow: 1;
   justify-content: space-between;
-  gap: 30vh;
+  gap: 5vh;
 }
 
+.academics {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.xp label {
+  margin-left: 2vh;
+  margin-right: 5vh;
+  font-family: "Monument Extended";
+  font-size: 6rem;
+  overflow: auto;
+  width: fit-content; /* Add this line to make the width fit the content */
+}
+.academics .content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+content {
+  display: flex;
+  flex-direction: column;
+  gap: 6vh;
+  margin-top: 1vh;
+  font-family: DM Sans;
+}
 .frame {
   display: flex;
   flex-direction: row;
-  gap: 10vw;
+  gap: 2vw;
   flex-grow: 1;
   box-sizing: border-box;
-  /* 
-  border-style: dashed;
-  border: 2px solid #000; Add this line to set the border width and color */
 }
 .left_frame {
   display: flex;
-  width: 50%;
+  width: 40%;
   flex-direction: row;
+}
+.number {
+  font-family: "Monument Extended";
+  font-size: 3rem;
+  transform: rotate(-90deg);
+  /* Add this line to make the width fit the content */
+}
+
+.job_title {
+  font-family: Monument Extended;
+}
+.key_words {
+  display: flex;
+  flex-direction: column;
 }
 
 .right_frame {
   display: flex;
   flex-direction: row;
-  width: auto;
-}
-.number {
-  margin-right: 5vh;
-  font-family: "Monument Extended";
-  font-size: 6rem;
-  transform: rotate(-90deg);
-  overflow: auto;
-  width: fit-content; /* Add this line to make the width fit the content */
+  width: 60%;
 }
 
-.key_words {
+.job {
+  justify-content: left;
 }
