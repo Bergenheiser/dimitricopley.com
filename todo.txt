@@ -1,0 +1,5 @@
+missing:
+Education section + content
+Content for XP section.
+
+Optional : make the about section responsive
