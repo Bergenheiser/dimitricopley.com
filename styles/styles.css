@@ -89,7 +89,7 @@ a {
   font-size: 10rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 90%; /* 10.125rem */
+  line-height: 90%;
   text-transform: uppercase;
 }
 .about_content {
@@ -107,7 +107,7 @@ a {
   font-size: 1rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 140%; /* 1.4rem */
+  line-height: 140%;
 }
 
 .contact_me {
@@ -153,12 +153,13 @@ a {
 
 .xp label {
   margin-left: 2vh;
-  margin-right: 5vh;
   font-family: "Monument Extended";
-  font-size: 6rem;
+  font-size: 3rem;
+  margin-bottom: 2vh;
   overflow: auto;
-  width: fit-content; /* Add this line to make the width fit the content */
+  width: fit-content;
 }
+
 .academics .content {
   display: flex;
   flex-direction: row;
@@ -188,7 +189,6 @@ content {
   font-family: "Monument Extended";
   font-size: 3rem;
   transform: rotate(-90deg);
-  /* Add this line to make the width fit the content */
 }
 
 .job_title {

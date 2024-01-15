@@ -37,7 +37,6 @@ mais pourquoi faire simple quand on peux faire compli... javascript?*/
 
 document.querySelectorAll("nav a").forEach((link, index) => {
   if (index < 2) {
-    //Oui tout a fait, je me suis mis dans un sacré bourbier (mais c'est joli sinon?)
     link.addEventListener("click", function (event) {
       event.preventDefault();
       fetch(this.dataset.file)

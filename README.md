@@ -1,1 +1,1 @@
-clone, rince, repeat. blyat.
+clone, rince, repeat.
