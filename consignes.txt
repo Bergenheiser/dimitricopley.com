@@ -1,0 +1,49 @@
+
+Bonjour à tous,
+
+Veuillez trouver ci -dessous les modalités et informations nécessaires
+à l'élaboration de vos compte-rendu de TP en Conception de site WEB.
+
+Un compte-rendu par étudiant.
+
+Le compte-rendu contient 5 pages maximum de texte rédigé par vos soins
+(2,5 pages dans le cas d'un document imprimé en recto-verso).
+
+Le compte-rendu contient également des annexes et d'autres éléments
+détaillés ci-dessous qui ne sont pas à comptabiliser dans les 5 pages.
+
+Le compte-rendu applique impérativement les règles de la typographie
+française (voir " Petite leçon de typographie " de Jacques André).
+
+Composition du compte-rendu :
+- Une couverture reprenant les informations nécessaires à identifier
+  votre document.
+- Dans les 5 pages :
+  - Introduction.
+  - Explications structurées des difficultés que vous avez rencontrées
+    et comment vous les avez résolues. Trucs et astuces mis en oeuvre
+    dans votre document, tout ce qui vous semble pertinent, etc.
+  - Conclusions.
+  - Votre ressenti, vos critiques, vos commentaires sur l'ensemble
+    (cours et TPs) de cet enseignement (sert usuellement à faire
+    évoluer cet enseignement d'une année sur l'autre). Bien entendu,
+    cet élément n'entre pas dans votre évaluation et ne pondère en rien
+    votre note finale.
+- En annexes :
+  - Impression de la page principale de votre CV au format HTML
+    ***affichée dans un navigateur***. Si plusieurs pages HTML, à vous
+    de juger de la pertinence d'imprimer les autres pages.
+  - Intégralité du code source (HTML, CSS, javascript si nécessaire).
+    De manière à préserver les ressources papier, tout en conservant le
+    caractère lisible du code, vous devez le disposer en plusieurs
+    colonnes par page, en recto-verso, dans une taille de police très
+    petite. Bien entendu, les différents fichiers sont identifiables et
+    correctement nommés. Ces directives visent à minimiser la quantité
+    de papier nécessaire à l'impression de ce code (plusieurs colonnes,
+    recto-verso, etc. ).
+  - Une bibliographie/webographie exhaustive des sources mobilisées
+    pour la réalisation de votre CV.
+
+Le compte-rendu imprimé est à remettre au secrétariat DREAM 
+(Béatrice Buchart) pour le jeudi 25 janvier 2024 16h00 au plus tard.
+

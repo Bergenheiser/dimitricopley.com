@@ -181,7 +181,7 @@ content {
 }
 .left_frame {
   display: flex;
-  width: 40%;
+  width: 30%;
   flex-direction: row;
 }
 .number {
