@@ -1,5 +1,4 @@
 /*Toggle switch logic*/
-
 async function handleLangChange() {
   switch (this.checked) {
     case false:
@@ -25,18 +24,15 @@ function uncheckToggleSwitch() {
   let langToggle = document.getElementById("langToggle");
   langToggle.checked = false;
 }
-
 let langToggle = document.getElementById("langToggle");
 langToggle.addEventListener("change", handleLangChange);
 window.addEventListener("load", uncheckToggleSwitch);
-
 /* Ayant voulu experimenter avec le routage des liens par insertion de contenu 
 (à l'inverse d'une redirection) parceque "la bande passante c'est du charbon!" [N. VIEVILLE - 2023]
 le code suivant fait donc ce qu'un onclick en html aurait très bien pu faire, 
 mais pourquoi faire simple quand on peux faire compli... javascript?*/
-
 document.querySelectorAll("nav a").forEach((link, index) => {
-  if (index < 2) {
+  if (index < 3) {
     link.addEventListener("click", function (event) {
       event.preventDefault();
       fetch(this.dataset.file)
@@ -59,9 +55,7 @@ arrow.addEventListener("click", function (event) {
     })
     .catch((error) => console.error(error));
 });
-
 /*Allocation dynamique du contenu d'experience professionnelle*/
-
 function createJobCardHTML(job) {
   return `
     <div class="frame">
@@ -79,7 +73,6 @@ function createJobCardHTML(job) {
     <div class="separator"></div>
   `;
 }
-
 let xpButton = document
   .getElementById("xp")
   .addEventListener("click", function (event) {

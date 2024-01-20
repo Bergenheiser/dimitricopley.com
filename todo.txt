@@ -1,5 +1,5 @@
 -Ajouter une section avec mes informations
-- Retravailler le visuel des sections jobs.
+-Retravailler le visuel des sections jobs.
 
 
 Rapport : ajouter cite figure du résultat dans la section json+js de developpment.
